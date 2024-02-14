@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tanvir-sahota/poll.git"
+    "url": "git+https://github.com/siqili471/testDeploy.git"
   },
   "author": "Marshall & Co",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tanvir-sahota/poll/issues"
+    "url": "https://github.com/siqili471/testDeploy/issues"
   },
-  "homepage": "https://github.com/tanvir-sahota/poll#readme",
+  "homepage": "https://github.com/siqili471/testDeploy",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.1",
