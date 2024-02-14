@@ -49,8 +49,6 @@ app.get("/*", (req,res)=>{
   )
 })
 
-
 // Start Server
-const IP_ADDRESS = '0.0.0.0';
-app.listen(PORT, IP_ADDRESS,() => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 module.exports=app
