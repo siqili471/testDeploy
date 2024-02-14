@@ -15,7 +15,7 @@ if (!allowEveryOrigin)
 {
   //Only allows requests from one host for security, enable in production
   const corsOptions = { 
-    origin : ['http://localhost:3000'], 
+    origin : ['http://localhost:3000','http://18.134.73.137']
   } 
   app.use(cors(corsOptions))
 }
