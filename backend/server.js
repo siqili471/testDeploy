@@ -38,10 +38,10 @@ const buildPath = path.join(_dirname, "../frontend/build");
 // Routes
 app.use(express.static(buildPath))
 app.use('/classrooms', require('./routes/Classroom'));
-app.get("/*", function(req,res){
+app.get("*", (req,res)=>{
   res.sendFile(
     path.join(_dirname,'../frontend/build/index.html'),
-    function(err){
+    err=>{
       if(err){
         res.status(500).send(err);
       }
