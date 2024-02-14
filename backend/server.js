@@ -32,7 +32,7 @@ mongoose.connect(URI, {
   .catch(err => console.log(err));
 
 // connect frontend
-const _dirname = path.dirname("")
+// const _dirname = path.dirname("")
 const buildPath = path.join(_dirname, "../frontend/build");
 
 // Routes
