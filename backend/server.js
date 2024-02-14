@@ -33,14 +33,14 @@ mongoose.connect(URI, {
 
 // connect frontend
 // const _dirname = path.dirname("")
-const buildPath = path.join(_dirname, "../frontend/build");
+const buildPath = path.join(__dirname, "../frontend/build");
 
 // Routes
 app.use(express.static(buildPath))
 app.use('/classrooms', require('./routes/Classroom'));
 app.get("*", (req,res)=>{
   res.sendFile(
-    path.join(_dirname,'../frontend/build/index.html'),
+    path.join(__dirname,'../frontend/build/index.html'),
     err=>{
       if(err){
         res.status(500).send(err);
