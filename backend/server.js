@@ -6,7 +6,7 @@ const path = require('path')
 require('dotenv').config();
 
 const app = express();
-const PORT = 4001;
+const PORT = 4000;
 const URI = process.env.MONGO_URI;
 const allowEveryOrigin = true;
 
