@@ -4,14 +4,36 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
         {
-            "type": "node",
+            "name": "Launch Chrome",
             "request": "launch",
-            "name": "Launch Program",
+            "type": "chrome",
+            "url": "http://localhost:3000/sign_up",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Attach by Process ID",
+            "processId": "${command:PickProcess}",
+            "request": "attach",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/frontend/src/pages/Dashboard.js"
+            "type": "node"
+        },
+        {
+            "command": "npm start",
+            "name": "Backend",
+            "request": "launch",
+            "type": "node-terminal",
+            "cwd": "${workspaceFolder}/backend/"
+        },
+        {
+            "command": "npm run test",
+            "name": "Backend tests",
+            "request": "launch",
+            "type": "node-terminal",
+            "cwd": "${workspaceFolder}/backend/"
         }
     ]
 }
