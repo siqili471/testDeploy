@@ -14,7 +14,7 @@ const ClassroomForm = () => {
 
         const classroom = {title, owner}
 
-        const response = await fetch('http://18.134.73.137/classrooms', {
+        const response = await fetch('http://localhost:4000/classrooms', {
             method: 'POST',
             body: JSON.stringify(classroom),
             headers: {
