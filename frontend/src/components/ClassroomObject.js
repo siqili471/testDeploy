@@ -8,7 +8,7 @@ const ClassroomObject = ({ classroom }) => {
     const handleClick = async () => {
       console.log(classroom._id)
 
-      const response = await fetch('http://localhost:4000/classrooms/' + classroom._id, {
+      const response = await fetch(`${process.env.HOST}/classrooms/`, + classroom._id, {
         method: 'DELETE'
       })
 
